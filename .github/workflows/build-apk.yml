@@ -1,0 +1,62 @@
+name: Build Android APK & Web App
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-web:
+    name: Build Web App & Artifacts
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci || npm install
+
+      - name: Build web application
+        run: npm run build
+
+      - name: Upload Web Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: web-dist
+          path: dist/
+          retention-days: 14
+
+  package-apk-info:
+    name: Prepare APK Bundler Info
+    needs: build-web
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download web build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: web-dist
+          path: dist
+
+      - name: Verify Web App Manifest & Service Worker
+        run: |
+          echo "=== PWA & APK ASSET VERIFICATION ==="
+          ls -la public/
+          test -f public/manifest.json && echo "✓ manifest.json exists"
+          test -f public/sw.js && echo "✓ sw.js exists"
+          test -f public/pwa-192x192.png && echo "✓ 192x192 icon exists"
+          test -f public/pwa-512x512.png && echo "✓ 512x512 icon exists"
+          test -f public/pwa-maskable-512x512.png && echo "✓ maskable icon exists"
+          echo "Build siap dibungkus menjadi APK via PWABuilder, AppsGeyser, atau Bubblewrap!"

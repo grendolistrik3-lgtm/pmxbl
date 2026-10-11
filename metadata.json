@@ -1,0 +1,6 @@
+{
+  "name": "PM X BL - Toko Bangunan & Smart AI Buffer",
+  "description": "Aplikasi manajemen operasional toko bangunan PM X BL dengan Smart Voice & Text Buffer AI, 3-tier satuan, dan pencatatan kas laci harian.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

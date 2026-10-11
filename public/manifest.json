@@ -1,0 +1,68 @@
+{
+  "id": "./",
+  "name": "PM X BL - Toko Bangunan & Smart AI Buffer",
+  "short_name": "PM X BL",
+  "description": "Aplikasi operasional toko bangunan PM X BL dengan Smart Voice & Text AI Buffer, kasir POS thermal, dan kas laci.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#f97316",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Buka Kasir",
+      "short_name": "Kasir",
+      "description": "Buka modul kasir toko langsung",
+      "url": "./#kasir",
+      "icons": [{ "src": "pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Smart Buffer AI",
+      "short_name": "Buffer AI",
+      "description": "Input laporan operasional cepat dengan suara & AI",
+      "url": "./#buffer",
+      "icons": [{ "src": "pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Stok Barang",
+      "short_name": "Stok",
+      "description": "Lihat inventaris stok 3-tier satuan",
+      "url": "./#inventory",
+      "icons": [{ "src": "pwa-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}

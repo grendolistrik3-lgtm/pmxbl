@@ -1,0 +1,36 @@
+{
+  "packageId": "com.pmxbl.tokobangunan",
+  "host": "pmxbl.app",
+  "name": "PM X BL - Toko Bangunan & Smart AI Buffer",
+  "launcherName": "PM X BL",
+  "display": "standalone",
+  "themeColor": "#f97316",
+  "themeColorDark": "#ea580c",
+  "navigationColor": "#ffffff",
+  "navigationColorDark": "#1c1917",
+  "backgroundColor": "#ffffff",
+  "startUrl": "/",
+  "iconUrl": "/pwa-512x512.png",
+  "maskableIconUrl": "/pwa-maskable-512x512.png",
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {
+    "locationDelegation": {
+      "enabled": false
+    },
+    "playBilling": {
+      "enabled": false
+    }
+  },
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isLegacyAssetStatements": false,
+  "fullScopeUrl": "/"
+}
