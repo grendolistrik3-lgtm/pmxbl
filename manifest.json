@@ -1,15 +1,19 @@
 {
   "id": "./",
-  "name": "PM X BL - Toko Bangunan & Smart AI Buffer",
+  "name": "PM X BL - Toko Bangunan &amp; Smart AI Buffer",
   "short_name": "PM X BL",
-  "description": "Aplikasi operasional toko bangunan PM X BL dengan Smart Voice & Text AI Buffer, kasir POS thermal, dan kas laci.",
+  "description": "Aplikasi operasional toko bangunan PM X BL dengan Smart Voice &amp; Text AI Buffer, kasir POS thermal, dan kas laci.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "any",
   "background_color": "#ffffff",
   "theme_color": "#f97316",
-  "categories": ["business", "productivity", "utilities"],
+  "categories": [
+    "business",
+    "productivity",
+    "utilities"
+  ],
   "icons": [
     {
       "src": "pwa-192x192.png",
@@ -48,21 +52,39 @@
       "short_name": "Kasir",
       "description": "Buka modul kasir toko langsung",
       "url": "./#kasir",
-      "icons": [{ "src": "pwa-192x192.png", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "pwa-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "Smart Buffer AI",
       "short_name": "Buffer AI",
-      "description": "Input laporan operasional cepat dengan suara & AI",
+      "description": "Input laporan operasional cepat dengan suara &amp; AI",
       "url": "./#buffer",
-      "icons": [{ "src": "pwa-192x192.png", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "pwa-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "Stok Barang",
       "short_name": "Stok",
       "description": "Lihat inventaris stok 3-tier satuan",
       "url": "./#inventory",
-      "icons": [{ "src": "pwa-192x192.png", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "pwa-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
     }
-  ]
+  ],
+  "share_target": {
+    "method": "GET"
+  }
 }
